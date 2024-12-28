@@ -1,0 +1,67 @@
+.wrapper2{
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overscroll-behavior: contain;
+}
+
+.expandable-card {
+  position: relative;
+  border-radius: 100%;
+  width: 0px;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  transition: all 0.1s ease;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 50px;
+}
+
+.expandable-card:hover .blur-effect {
+  backdrop-filter: blur(4px);
+  opacity: 0.5;
+}
+
+.card-header {
+  color: black;
+  padding-top: 0px;
+  background-color: #ffffff;
+  border-radius: 100px;
+  border-bottom: 0px solid #ffffff;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+}
+
+.card-header h2 {
+  margin: 0;
+  font-size: large;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.card-content {
+  padding: 0px;
+  overflow: hidden;
+  opacity: 0;
+  max-height: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.card-content.show-content {
+  opacity: 1;
+  max-height: 100%;
+}
+
+.blur-effect {
+  position: absolute;
+  top: 10;
+  left: 10;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border-radius: 10px; 
+}
