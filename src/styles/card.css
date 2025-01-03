@@ -25,19 +25,14 @@
 .card-header {
   color: black;
   padding-top: 0px;
-  background-color: #ffffff;
+  background-color:  white;
   border-radius: 100px;
   border-bottom: 0px solid #ffffff;
   cursor: pointer;
   font-family: "Montserrat", sans-serif;
-}
-
-.card-header h2 {
-  margin: 0;
-  font-size: large;
   display: flex;
   justify-content: center;
-  padding: 0;
+  width: 100%;
 }
 
 .card-content {

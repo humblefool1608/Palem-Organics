@@ -1,0 +1,77 @@
+  .contact-form-container {
+    padding: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    box-shadow:20px 20px 50px rgba(0,0,0,0.5);
+    border-radius:15px;
+    background:rgba(255,255,255,0.1);
+    border-top:0px solid rgba(255,255,255,0.5);
+    border-left:0px solid rgba(255,255,255,0.5);
+    backdrop-filter: blur(5px);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  form label {
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+    border: 0.1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 14px;
+    outline: none;
+    transition: border 0.3s;
+  }
+  
+  form input[type="text"]:focus,
+  form input[type="email"]:focus,
+  form textarea:focus {
+    border: 1px solid #4d60a8;
+    box-shadow: 0 0 5px rgba(77, 96, 168, 0.5);
+  }
+  
+  form textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  form input[type="submit"] {
+    background-color: #4d60a8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #323232;
+  }
+  
+  .status-message {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+.contact-form-container .status-message.success { 
+    color: white;
+    transform: scale(1.2); 
+}

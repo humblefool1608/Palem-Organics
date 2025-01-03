@@ -32,9 +32,9 @@ html, body {
 
 .content {
   position: relative;
-  font-size: 3.5rem;
+  font-size: clamp(1rem, 5vw, 5rem);
   margin-left: 50px;
-  margin-top: 10%;
+  margin-top: 100px;
   color: rgb(255, 255, 255);
   font-family: "Montserrat", sans-serif;
   text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
@@ -43,7 +43,7 @@ html, body {
 
 .flip {
   color: #0a00c1;
-  font-size: 3rem;
+  font-size: clamp(1rem, 4vw, 5rem);
   font-style: italic;
   text-shadow: 0px 0px 0px;
   padding: 0px;
@@ -58,7 +58,7 @@ html, body {
 .card{
   position: absolute;
   width: stretch;
-  top:70%;
+  top:69%;
   left:60%;
 }
 
@@ -67,5 +67,9 @@ html, body {
   display: flex;
   justify-content: space-evenly;
   z-index: 1;
+}
+
+.servicebutton{
+  text-decoration: none;
 }
 

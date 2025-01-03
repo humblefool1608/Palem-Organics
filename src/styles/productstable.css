@@ -1,0 +1,29 @@
+/* MaterialDataTable.css */
+.table-container {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 900px;
+    border-radius: 12px;
+    background-color: black; /* Black background around the table */
+  }
+  
+  .table-title {
+    font-size: clamp(1.5rem, 2.7vw, 5rem);
+    text-align: center;
+    margin-bottom: 20px;
+    color: white; /* White text for the title */
+  }
+  
+  .search-box {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius:10px ;
+  }
+  
+  .data-grid {
+    height: 400px;
+    background-color: white; /* White table body */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  

@@ -1,3 +1,17 @@
+body{
+  background-color: black;
+}
+
+
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
 *{
   font-family: "Montserrat", sans-serif;
 }
@@ -12,12 +26,12 @@
   
 .lab{
   width:100%;
-  height: 100vh;
+  height: 100%;
 }
   
 .labtitle{
   margin-top:0px;
-  font-size: 200%;
+  font-size: clamp(1.2rem, 2.5vw, 3rem);
   color: white;
   width:100%;
   display: flex;
@@ -25,44 +39,33 @@
 }
 
 .labtitle h1{
-  padding-top: 2%;
-}
-
-.atomsanim{
-  position: absolute;
-  transform: rotate(-30deg);
-  opacity: 0.5;
-  margin-left: 5%;
-  z-index: 0;
-}
-
-.atomsanim2{
-  position: absolute;
-  transform: rotate(30deg);
-  opacity: 0.3;
-  margin-top: -3%;
-  margin-left:83%;
+  padding-top: 5%;
+  font-weight: 600;
 }
 
 .service1{
   color: white;
-  margin-left:18%;
+  margin-left:15%;
   padding-top: 5%;
+  font-size: clamp(1rem, 1.7vw, 2rem);
 }
+
 .service1text{
   color: white;
-  margin-left:18%;
+  margin-left:15%;
   padding-top: 1%;
   padding-right: 40%;
   text-align: justify;
   text-justify: inter-word;
+  font-size: clamp(0.5rem, 1.16vw, 2rem);
 }
 
 
 .service2{
   color: white;
   margin-left:45%;
-  padding-top: 8%;
+  padding-top: 5%;
+  font-size: clamp(1rem, 1.7vw, 2rem);
 }
 .service2text{
   color: white;
@@ -71,6 +74,71 @@
   padding-right: 10%;
   text-align: justify;
   text-justify: inter-word;
+  padding-bottom: 5%;
+  font-size: clamp(0.5rem, 1.16vw, 2rem);
+}
+
+.about1{
+  display: flex;
+}
+
+.aboutustext{
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+}
+
+.aboutimg{
+  margin-top: 10%;
+  margin-left: 10%;
+  border-radius: 5%;
+}
+
+.about1 img{
+  max-height:210px;
+  max-width:400px;
+  height:auto;
+  width:auto;
+}
+
+.abouttitle{
+  padding-top: 10%;
+  font-size: clamp(1rem, 1.5vw, 2rem);
+  color: white;
+  font-weight: 600;
+}
+
+.aboutHead{
+  color: white;
+  padding-top: 1.5rem;
+  font-size: clamp(1rem, 3vw, 5rem);
+  font-weight: 500;
+}
+
+.aboutText{
+  color: white;
+  padding-top: 2%;
+  padding-right: 20%;
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: clamp(0.5rem, 1.1vw, 2rem);
+}
+
+.line{
+  margin-top: 2%;
+  width:15%;
+  height: 1px;
+  background-color: white;
+}
+
+.aboutbutton{
+  margin-top: 1rem;
+  text-decoration: none;
+  margin-bottom: 5rem;
+  display: flex;
+  margin-right: 68%;
+  transform: scale(0.9);
+  margin-left: -10px;
 }
 
 .mini{
@@ -79,22 +147,33 @@
 
 .appointment{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding: 0 20%;
   height:100px;
   background-color: rgb(159, 159, 159);
 }
 
-.textAppoint{
+
+.textAppoint h1{
+  display: flex;
+  flex-direction: column;
+  margin-left: -10px;
+  color: black;
+  padding-top:2rem ;
+  font-size: clamp(0.7rem, 1.8vw, 2.9rem);
+  font-weight: 700;
+}
+.textAppoint {
   display: flex;
   flex-direction: column;
   color: black;
-  padding-top:1.5rem ;
+  font-size: clamp(0.4rem, 1.1vw, 2.8rem);
 }
 
 .appointbutton{
-  padding-top: 1.9rem;
-  padding-right: 15%;
+  margin-top: 2.1rem;
+  padding-right: 10%;
   display: flex;
   border-radius: 0px;
+  transform: scale(0.9);
 }
